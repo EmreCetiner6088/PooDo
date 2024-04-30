@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+
+    tools:context=".TodoActivity">
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="30dp"
+        android:background="#0000"
+        android:src="@drawable/home_button" />
+
+
+
+    <ImageButton
+        android:id="@+id/ViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="17dp"
+        android:background="#0000"
+        android:src="@drawable/pomodoro_button"
+
+        />
+
+    <TextView
+        android:id="@+id/hello_text"
+        android:layout_width="279dp"
+        android:layout_height="195dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:alpha="0.5"
+        android:text="Yapmak İstediklerinizi Buraya Ekleyebilirsiniz"
+        android:textColor="#98566C"
+        android:textFontWeight="1000"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="153dp"
+        android:layout_height="119dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="112dp"
+        android:background="#0000"
+        android:src="@drawable/todo_gorev" />
+
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="592dp"
+        android:layout_above="@+id/add"
+        android:layout_marginBottom="6dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="#0000"
+        android:src="@drawable/isikli_todo"
+
+        />
+
+
+</RelativeLayout>
